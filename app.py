@@ -6,7 +6,7 @@ app=Flask(__name__)
 
 @app.route('/home')
 def giveInsect():
-    randomInsect=Image.open('beez\kaggle_bee_vs_wasp\bee1\10823834_7f6ddb5bce_n.jpg')
+    randomInsect=Image.open(r'beez\kaggle_bee_vs_wasp\bee1\2984293_b650d46745_n.jpg')
     return render_template('home.html', randomInsect=randomInsect)
 
 if __name__=='__main__':
